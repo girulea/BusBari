@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Amtab</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Orari</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Percorso">Percorso</string>
+    <string name="corse">corse</string>
+    <string name="mappa">mappa</string>
+
+    <string name="selectionMaps">Indica cosa visualizzare sulla mappa</string>
+    <string name="allBusStop">Tutte le fermate</string>
+    <string name="onlyLIne">Fermate relative ad una linea </string>
+    <string name="title_activity_maps_bus_stop">Map</string>
+    <string name="title_activity_maps_line">Map</string>
+    <string name="select_line">Linea: </string>
+    <string name="progressivo_teorico">"Progressivo teorico: "</string>
+    <string name="nessuna_linea_disponibile">Nessuna linea disponibile</string>
+    <string name="linee">" Linee"</string>
+    <string name="linee_passanti">Linee passanti</string>
+    <string name="in_arrivo">IN ARRIVO</string>
+    <string name="fermate">Fermate</string>
+    <string name="downloadlinee">Download linee</string>
+    <string name="downloadfermate">Download fermate</string>
+    <string name="downloadserviziogiornaliero">Download servizio giornaliero</string>
+    <string name="elaborazioneserviziogiornaliero">Elaborazione del servizio giornaliero</string>
+    <string name="downloadfermatedilinea">Download fermate di linea e servizio giornaliero</string>
+    <string name="posizionedelpullmannondisponibile">La posizione del pullman per questa corsa non è disponibile</string>
+</resources>

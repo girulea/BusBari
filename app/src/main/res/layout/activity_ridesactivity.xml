@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="0dp"
+    android:background="@color/back"
+    android:id="@+id/activity_mainbackupview">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/back"
+        app:elevation="0dp"
+        android:paddingBottom="5dp"
+        android:clipToPadding="false">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@color/primarySurfaceColor"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbarRides"
+            app:logo="@mipmap/bus_icon_white36dp"
+            app:title="Corse"
+            app:titleTextColor="@color/textColorProject"
+            android:elevation="5dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primarySurfaceColor"
+                android:layout_marginBottom="4dp"
+                android:elevation="0dp"
+                android:gravity="right">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinner"
+                        android:entries="@array/directionsArray"
+                        style="@android:style/Widget.Material.Spinner"
+                        android:dropDownSelector="@color/textColorProject"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <include layout= "@layout/circle_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="5dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/textColorProject"
+        android:animateLayoutChanges="true" />
+</LinearLayout>

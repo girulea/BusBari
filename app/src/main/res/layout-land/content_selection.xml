@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".maps2.SelectionActivity"
+    tools:showIn="@layout/activity_selection"
+    android:background="@color/back">
+
+    <Button
+        android:text="@string/onlyLIne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOnlyLines"
+        android:background="@drawable/buttonshape"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"
+        android:textColor="@color/back"
+        android:layout_below="@+id/btnAllBusStops"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        android:text="@string/allBusStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAllBusStops"
+        android:background="@drawable/buttonshape"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"
+        android:textColor="@color/back"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnOnlyLines"
+        android:layout_alignEnd="@+id/btnOnlyLines" />
+
+</RelativeLayout>

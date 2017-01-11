@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.amtab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher">
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+        <activity android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.RidesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/corse"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.PathActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.TheoreticalPathActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/Percorso"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".activities.PathActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/Percorso"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".activities.RidesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.RidesActivity" />
+        </activity>
+
+        <activity
+            android:name=".maps2.SelectionActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.amtab.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".maps2.MapsBusStopActivity"
+            android:parentActivityName=".maps2.SelectionActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".maps2.MapsLineActivity"
+            android:parentActivityName=".maps2.SelectionActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+    </application>
+</manifest>

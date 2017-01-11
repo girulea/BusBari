@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primarySurfaceColor">#0277bd</color>
+    <color name="secondarySurfaceColor">#42a5f5</color>
+    <color name="tertiarySurfaceColor">#546e7a</color>
+    <color name="textColorProject">#ffffff</color>
+    <color name="back">#fdfafa</color>
+    <color name="secondaryTextColorProject">#e0e0e0</color>
+    <color name="colorPrimary">#0277bd</color>
+    <color name="colorPrimaryDark">#015384</color>
+</resources>
